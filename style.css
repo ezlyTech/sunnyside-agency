@@ -18,9 +18,17 @@
     --darkBlue: hsl(212, 27%, 19%);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* HEADER ============== */
 .hamburger {
+    display: none;
+}
+
+.nav-mobile {
     display: none;
 }
 
@@ -38,6 +46,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 .nav__items {
@@ -92,6 +101,14 @@ header {
     color: var(--white);
     letter-spacing: 10px;
 }
+
+.arrow-down {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
 
 /* TILES ====================== */
 .tiles {
@@ -193,6 +210,7 @@ header {
 
 .img-text__image img{
     width: 100%;
+    display: block;
 }
 
 .img-text__content {
@@ -202,7 +220,7 @@ header {
     width: 50%;
     text-align: center;
     position: absolute;
-    top: 70%;
+    bottom: 10%;
     left: 25%;
 }
 
@@ -239,6 +257,7 @@ header {
 .cards__wrapper {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {

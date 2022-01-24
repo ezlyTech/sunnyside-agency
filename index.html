@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
@@ -32,15 +33,28 @@
         <div class="bar"></div>
         <div class="bar"></div>
       </div>
+
+      <div class="nav-mobile">
+        <div class="nav-mobile__wrapper">
+          <div class="triangle-left"></div>
+          <div class="nav-mobile__links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#"><button class="nav-mobile__btn">CONTACT</button></a></li>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <div class="header__headline">
       <h1>WE ARE CREATIVES</h1>
+      <a href="#tiles" class="arrow-down"><img src="images/icon-arrow-down.svg" alt=""></a>
     </div>
   </header>
 
   <!-- TILES 1 -->
-  <section class="section tiles">
+  <section class="section tiles reverse" id="tiles">
     <div class="tile">
       <div class="tile__content">
         <h2 class="tile__headline">Transform your brand</h2>
@@ -68,9 +82,8 @@
 
     <div class="tile">
       <div class="tile__content">
-        <h2 class="tile__headline">Transform your brand</h2>
-        <p class="tile__texts">We are a full-service creative agency specializing in helping brands grow fast. 
-        Engage your clients through compelling visuals that do most of the marketing for you.
+        <h2 class="tile__headline">Stand out to the right audience</h2>
+        <p class="tile__texts">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
         </p>
         <a href="#" class="tile__cta__red">LEARN MORE</a>
       </div>
@@ -95,9 +108,9 @@
       <div class="img-text__image">
         <img src="images/desktop/image-photography.jpg" alt="Graphic Design">
         <div class="img-text__content">
-          <h3 class="img-text__headline">Graphic Design</h3>
+          <h3 class="img-text__headline">Photography</h3>
           <p class="img-text__texts">
-          Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+            Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
           </p>
         </div>
       </div>
@@ -129,30 +142,30 @@
       <!-- Card 2 -->
       <div class="card">
         <figure class="card__figure">
-          <img src="images/image-emily.jpg" alt="">
+          <img src="images/image-thomas.jpg" alt="">
         </figure>
 
         <div class="card__body">
           <p class="card__copy">
-            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
           </p>
-          <p class="card__title">Emily R.</p>
-          <p class="card__subtitle">Marketing Director</p>
+          <p class="card__title">Thomas S.</p>
+          <p class="card__subtitle">Chief Operating Officer</p>
         </div>
       </div>
 
       <!-- Card 3 -->
       <div class="card">
         <figure class="card__figure">
-          <img src="images/image-emily.jpg" alt="">
+          <img src="images/image-jennie.jpg" alt="">
         </figure>
 
         <div class="card__body">
           <p class="card__copy">
-            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+            Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
           </p>
-          <p class="card__title">Emily R.</p>
-          <p class="card__subtitle">Marketing Director</p>
+          <p class="card__title">Jennie F.</p>
+          <p class="card__subtitle">Business Owner</p>
         </div>
       </div>
     </div>
@@ -262,5 +275,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Eliz Manalo</a>.
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
